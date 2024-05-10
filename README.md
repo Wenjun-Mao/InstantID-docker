@@ -1,6 +1,6 @@
 Add the Dockerfile and .dockerignore files to the root of the project. Will run gradio_demo/app.py at port 7860 on launch.
-Aimed for minimal setup for running the InstantID demo web app.
-Base Model: wangqixun/YamerMIX_v8
+Aimed for minimal setup and downloading for running the InstantID demo web app locally.
+Included Base Model: wangqixun/YamerMIX_v8
 
 
 <div align="center">
