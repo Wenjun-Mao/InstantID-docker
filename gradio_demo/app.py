@@ -90,7 +90,8 @@ def main(pretrained_model_name_or_path="wangqixun/YamerMIX_v8", enable_lcm_arg=F
 
     pipe.load_ip_adapter_instantid(face_adapter)
     # load and disable LCM
-    pipe.load_lora_weights("latent-consistency/lcm-lora-sdxl")
+    # pipe.load_lora_weights("latent-consistency/lcm-lora-sdxl")
+    pipe.load_lora_weights("./lcm-lora-sdxl")
     pipe.disable_lora()
     def toggle_lcm_ui(value):
         if value:

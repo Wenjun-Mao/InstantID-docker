@@ -17,6 +17,7 @@ RUN pip install --no-cache-dir -r gradio_demo/requirements.txt
 
 RUN git lfs install
 RUN git clone https://huggingface.co/wangqixun/YamerMIX_v8
+RUN git clone https://huggingface.co/latent-consistency/lcm-lora-sdxl
 
 RUN python gradio_demo/download_models.py
 
