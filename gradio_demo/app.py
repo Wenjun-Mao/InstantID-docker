@@ -441,7 +441,7 @@ def main(pretrained_model_name_or_path="wangqixun/YamerMIX_v8", enable_lcm_arg=F
         
         gr.Markdown(article)
 
-    demo.launch()
+    demo.launch(server_name="0.0.0.0")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
