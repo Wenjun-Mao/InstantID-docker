@@ -437,7 +437,7 @@ def main(pretrained_model_name_or_path="wangqixun/YamerMIX_v8", enable_lcm_arg=F
             run_on_click=True,
             fn=run_for_examples,
             outputs=[gallery, usage_tips],
-            cache_examples=True,
+            cache_examples=False,
         )
         
         gr.Markdown(article)
