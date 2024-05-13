@@ -21,10 +21,10 @@ jobs:
 
           - name: Build and tag Docker image
             run: |
-                docker build -t wjmao/instantid-docker:latest \
+                docker build -t wjmao/instantid-docker:20240513juggernaut-xl-v9 \
                             -t wjmao/instantid-docker:${{ github.sha }} .
 
           - name: Push Docker image to Docker Hub
             run: |
-                docker push wjmao/instantid-docker:latest
+                docker push wjmao/instantid-docker:20240513juggernaut-xl-v9
                 docker push wjmao/instantid-docker:${{ github.sha }}
