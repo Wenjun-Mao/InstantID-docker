@@ -1,7 +1,7 @@
 FROM pytorch/pytorch:2.0.0-cuda11.7-cudnn8-runtime
 
 # ARG MODEL_URL=https://huggingface.co/wangqixun/YamerMIX_v8
-MODEL_URL=https://huggingface.co/stablediffusionapi/juggernaut-xl-v9
+ARG MODEL_URL=https://huggingface.co/stablediffusionapi/juggernaut-xl-v9
 
 WORKDIR /app
 
